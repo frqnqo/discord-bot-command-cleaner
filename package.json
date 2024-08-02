@@ -1,0 +1,26 @@
+{
+  "name": "discord-bot-command-cleaner",
+  "description": "A utility to clean up all registered commands of a Discord bot",
+  "version": "1.0.0",
+  "main": "src/clean.js",
+  "scripts": {
+    "start": "node ./src/clean.js",
+    "verify": "node ./src/verify.js"
+  },
+  "keywords": [
+    "discord",
+    "bot",
+    "command",
+    "commands",
+    "cleaner"
+  ],
+  "author": "frqnqo",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^14.15.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/frqnqo/discord-bot-command-cleaner.git"
+  }
+}
