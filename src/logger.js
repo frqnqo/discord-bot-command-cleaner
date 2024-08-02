@@ -5,7 +5,7 @@ const colors = {
     yellow: "\x1b[33m"
 }
 
-function getDateTime() {
+function getTime() {
     const now = new Date()
     
     const hour = now.getHours().toString().padStart(2, "0")
@@ -17,18 +17,18 @@ function getDateTime() {
 
 module.exports = {
     logError: (message) => {
-        console.log(`${getDateTime()} ${colors.red}${message}${colors.reset}`)
+        console.log(`${getTime()} ${colors.red}${message}${colors.reset}`)
     },
 
     logSuccess: (message) => {
-        console.log(`${getDateTime()} ${colors.green}${message}${colors.reset}`)
+        console.log(`${getTime()} ${colors.green}${message}${colors.reset}`)
     },
 
     log: (message) => {
-        console.log(`${getDateTime()} ${message}`)
+        console.log(`${getTime()} ${message}`)
     },
 
     logWarn: (message) => {
-        console.log(`${getDateTime()} ${colors.yellow}${message}${colors.reset}`)
+        console.log(`${getTime()} ${colors.yellow}${message}${colors.reset}`)
     }
 }
